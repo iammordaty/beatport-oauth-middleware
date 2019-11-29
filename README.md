@@ -54,15 +54,15 @@ $response = $client->get('catalog/3/tracks', [
 $contents = json_decode($response->getBody()->getContents(), true);
 ```
 
-In addition, it is also possible to cache access token for later use:
-
+In addition, it is also possible to cache access token for later use.
+// or, with a token that will be stored in :
 ```php
 use BeatportOauth\OauthMiddlewareFactory;
 use Cache\Adapter\PHPArray\ArrayCachePool;
 use GuzzleHttp\HandlerStack;
 
 $oauthParams = [/* */];
-$cache = new ArrayCachePool();
+$cache = new ArrayCachePool(); // or any other PSR-16 compatible cache pool
 $cacheConfig = [ 'key' => 'my-access-token-info' ]; // optional
 
 $middleware = OauthMiddlewareFactory::createWithCachedToken(
