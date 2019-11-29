@@ -1,6 +1,6 @@
 {
     "name": "iammordaty/beatport-oauth-middleware",
-    "description": "Guzzle 6.x OAuth middleware for [Beatport](http://beatport.com) API. Allows server-side querying and access token caching.",
+    "description": "Guzzle 6.x OAuth middleware for Beatport API. Allows server-side querying and access token caching.",
     "keywords": [ "guzzlehttp", "guzzle", "middleware", "beatport",  "oauth", "api", "library" ],
     "license": "MIT",
     "type": "library",
