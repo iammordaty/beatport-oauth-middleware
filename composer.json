@@ -1,0 +1,40 @@
+{
+    "name": "iammordaty/beatport-oauth-middleware",
+    "description": "Guzzle 6.x OAuth middleware for [Beatport](http://beatport.com) API. Allows server-side querying and access token caching.",
+    "keywords": [ "guzzlehttp", "guzzle", "middleware", "beatport",  "oauth", "api", "library" ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "iammordaty",
+            "email": "iammordaty@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*",
+
+        "guzzlehttp/guzzle": ">=6.0",
+        "guzzlehttp/oauth-subscriber": "^0.3.0",
+        "iammordaty/guzzle-urlencoded-response-middleware": "^0.1.0",
+        "iammordaty/guzzlehttp-factory": "^1.0",
+        "psr/simple-cache": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "phpstan/phpstan": "^0.11.19",
+        "shrikeh/teapot": "^2.3",
+        "cache/array-adapter": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BeatportOauth\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BeatportOauth\\Tests\\Unit\\": "tests/unit",
+            "BeatportOauth\\Tests\\Integration\\": "tests/integration"
+        }
+    }
+}
