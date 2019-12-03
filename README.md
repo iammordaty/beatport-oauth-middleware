@@ -2,6 +2,15 @@
 
 Guzzle 6.x OAuth middleware for [Beatport](http://beatport.com) API. Allows server-side querying and access token caching.
 
+## Table of Contents
+
+- [Installation](#installation)
+- [Requirements](#Requirements)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Further information](#further-information)
+- [License](#license)
+
 ## Installation
 
 The easiest way to install this middleware is via [composer](https://getcomposer.org):
@@ -55,7 +64,7 @@ $contents = json_decode($response->getBody()->getContents(), true);
 ```
 
 In addition, it is also possible to cache access token for later use.
-// or, with a token that will be stored in :
+
 ```php
 use BeatportOauth\OauthMiddlewareFactory;
 use Cache\Adapter\PHPArray\ArrayCachePool;
