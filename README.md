@@ -5,7 +5,7 @@ Guzzle 6.x OAuth middleware for [Beatport](http://beatport.com) API. Allows serv
 ## Table of Contents
 
 - [Installation](#installation)
-- [Requirements](#Requirements)
+- [Requirements](#requirements)
 - [Usage](#usage)
 - [Tests](#tests)
 - [Further information](#further-information)
